@@ -14,7 +14,7 @@
 # Wait a random amount of time that is deemed normal from watching a race and calculating an average.
 
 # If button still pressed then flash light and note time in library place one.
-# If button not pressed then start back at beggining and light green ready light.
+# If button not pressed then start back at beginning and light green ready light.
 
 # repeat process until all 3
 
