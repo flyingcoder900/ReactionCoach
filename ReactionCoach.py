@@ -1,15 +1,37 @@
 #Command used to install GPIO Library on Pi Zero
 ##pip install RPi.GPIO
-#Pull Test
+
 
 # Create a list of 3 reaction entries to be used.
-reactions = []
 
-# program Green LED Ready Light
 
-# Wait for button press from the user
+results = {
+    "reaction1": 5 ,
+    "reaction2": 10 ,
+    "reaction3": 15 ,
+}
 
-# Press button
+list = []
+
+for val in results.keys():
+    list.append(results[val])
+print((sum(list) / 3))
+
+
+
+
+
+
+
+
+
+
+
+# program Green LED Ready Light.
+
+# Wait for button press from the user.
+
+# Press button.
 
 
 # Wait a random amount of time that is deemed normal from watching a race and calculating an average.
@@ -29,6 +51,6 @@ reactions = []
 
 # Reset game
 
-reactions = []
+#reactions = {}
 
 
