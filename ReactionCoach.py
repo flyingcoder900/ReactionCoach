@@ -1,31 +1,37 @@
 #Command used to install GPIO Library on Pi Zero
 ##pip install RPi.GPIO
-
-
+import statistics
 # Create a list of 3 reaction entries to be used.
+# Runs the function to get a reaction time
+
+results = []
 
 
-results = {
-    "reaction1": 5 ,
-    "reaction2": 10 ,
-    "reaction3": 15 ,
-}
-
-list = []
-
-for val in results.keys():
-    list.append(results[val])
-print((sum(list) / 3))
-
-
-
-
-
-
-
-
+while True:
+    reaction_count = len(results)
+    if reaction_count >= 2:
+        input("Enter a reaction time: ")
+        results.append(run)
+    else:
+        reaction_spread = float(input("Enter a reaction spread: "))
+        if reaction_spread <= .015:
+                # three LED flashes
+                print("Three Led Flashes")
+        if .016 <= reaction_spread <= .030:
+                # two Led Flashes
+                print("Two Led Flashes")
+        if reaction_spread >= .031:
+                # One Led Flash
+                print("One Led Flash")
+        results = []
 
 
+
+#list = 0
+
+#def get_reaction_average():
+    #for val in results.values():
+        #list.append(results[val]
 
 # program Green LED Ready Light.
 
