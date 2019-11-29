@@ -1,7 +1,8 @@
-numbers = {
-    "one": 1,
-    "two": 2,
-}
+number = 5
+multiplier = 8
+answer = 0
 
-for num in numbers.keys():
-    print(numbers[num])
+# add your loop after this comment
+for i in range(multiplier):
+    answer += 5
+print(answer)
